@@ -1,0 +1,955 @@
+.site-container {
+    display: grid;
+    grid-template-rows: 0.3fr 6fr 0.3fr fit-content;
+    font-family: 'Oswald';
+}
+
+.nav-item {
+    margin: 0 auto;
+}
+
+.nav-link {
+    color:#FFFDFF!important;
+    font-size: 2rem;
+    transition: all 350ms ease;
+}
+
+.navbar {
+    background-color: #00559F;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bg-custom {
+    background-color: #00559F;
+}
+
+.navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    transition: all 350ms ease;
+}
+
+.nav-item a:hover, .nav-item a:focus {
+    box-shadow: 5px 5px #AFBD20, 6px 6px #AFBD20, 7px 7px #AFBD20;
+    transform: translateY(-3px);
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+    box-shadow: 5px 5px #AFBD20, 6px 6px #AFBD20, 7px 7px #AFBD20;
+    transform: translateY(-3px);
+}
+
+.logo {
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 100px;
+    margin-left: 1rem;
+}
+
+.dropdown-item {
+    box-shadow: none !important;
+}
+
+.content-container {
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    padding: 3rem;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.gallery-text {
+    color: white;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .8s ease;
+    background-color: #AFBD20;;
+  }
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+  .container:focus .overlay {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+.card {
+    width: 20%;
+}
+
+.team-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gallery-content {
+    position: relative;
+    width: 30%;
+    margin: 1rem;
+    border: 5px solid #00559F;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    max-height: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-content:hover .overlay{
+    opacity: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.gallery-content:focus {
+    position: relative;
+    width: 30%;
+    margin: 1rem;
+    border: 5px solid #00559F;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    max-height: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.footer-row {
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00559F;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.item {
+    margin: 10px;
+}
+
+.footer-text {
+    font-size: 24px;
+    font-weight: bold;
+    color:#FFFFFF;
+    font-family: 'Oswald';
+}
+
+.footer-icons {
+    display: flex;
+}
+
+.social-icon {
+    max-width: 172px;
+    max-height: 71px;
+    color: black;
+    transition: all 350ms ease;
+}
+
+.social-icon:hover, .social-icon:focus {
+    transform: scale(1.1);
+}
+
+.footer-button {
+    background-color: #AFBD20;
+    color: #FFFDFF;
+    border-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 25px;
+    width: 140px;
+    height: 40px;
+    transition: all 350ms ease;
+    font-weight: bold;
+    font-family: 'Oswald';
+}
+
+.footer-button:hover, .footer-button:focus {
+    transform: scale(1.1);
+    background-color: #68BBE3;
+}
+
+.page-header {
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    color: #00559F;
+    text-decoration: underline dotted #00559F;
+}
+
+h3 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 2.5rem;
+        color: #00559F;
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: #00559F;
+}
+
+.row {
+    flex-wrap: wrap;
+}
+
+.card-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: #00559F;
+    text-align: center;
+}
+
+.card-title-2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    color: #00559F;
+    font-style: italic;
+    text-decoration: underline dotted #00559F;
+}
+
+.card-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    color: #00559F;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 1rem;
+    border-color: #00559F;
+    border-width: 0.25rem;
+    height:auto;
+}
+
+.card-2 {
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 1rem;
+    border-color: #00559F;
+    border-width: 0.25rem;
+    height:auto;
+}
+
+.card:hover {
+    border-color: #AFBD20;
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+.card:focus {
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 1rem;
+    border-color: #00559F;
+    border-width: 0.25rem;
+    height:auto;
+}
+
+.card-img-top {
+    object-fit:scale-down;
+    max-height: 50%;
+}
+
+.students-image {
+    display: flex;
+    margin: 0 auto;   
+}
+
+.students-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.student-image-1 {
+    width: 210.5px;
+    height: 225.13px;
+}
+
+.student-image-2 {
+    width: 195.81px;
+    height: 213.96px;
+}
+
+.student-image-3 {
+    width: 210.5px;
+    height:213.96px;
+}
+
+.image-quote {
+    color:#00559F;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.student-options {
+    display: flex;
+    align-items: baseline;
+}
+
+.option {
+    color: #00559F;
+    text-decoration: underline;
+}
+
+.flex-option1 {
+    display: flex;
+    padding-left: 100px;
+    padding-top: 20px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.flex-option2 {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.flex-option3 {
+    display: flex;
+    padding-right: 100px;
+    padding-top: 20px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.option-text {
+    color:#00559F;
+    margin: 5px;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+.youtube-video {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.option-button {
+    color: white;
+    background-color: #00559F;
+    border-color: black;
+    border-radius: 8px;
+    width: 140px;
+    height: 40px;
+    transition: all 350ms ease;
+    font-size: 20px;
+    font-family: 'Oswald';
+    box-shadow: 0px 2px #000000;
+    margin: 0 auto;
+}
+
+.option-button:hover, .option-button:focus {
+    transform: scale(1.1);
+    background-color: #AFBD20;
+    color: black;
+}
+
+.home-button {
+    color: white;
+    background-color: #00559F;
+    border-color: black;
+    border-radius: 8px;
+    width: 140px;
+    height: 40px;
+    transition: all 350ms ease;
+    font-size: 20px;
+    font-family: 'Oswald';
+    box-shadow: 0px 2px #000000;
+    margin: 0 auto;
+}
+
+.home-button:hover, .home-button:focus {
+    transform: scale(1.1);
+    background-color: #AFBD20;
+    color: black;
+}
+
+.can-do-buttons {
+    display: flex;
+    margin: 0 auto;
+}
+
+.student-icons {
+    display: flex;
+}
+
+.facebook-icon {
+    width: 85px;
+    height: 85px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.twitter-icon {
+    width: 85px;
+    height: 85px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.instagram-icon {
+    width: 85px;
+    height: 85px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.spotify-icon {
+    width: 85px;
+    height: 85px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.slack-icon {
+    width: 85px;
+    height: 85px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.youtube-icon {
+    width: 85px;
+    height: 85px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.follow-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.follow-text {
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*resources styling*/
+.resource-header {
+    margin: 0 auto;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.unc-resources {
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.unc-resources-row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+}
+
+.unc-resource-card {
+    padding: 2em;
+    border: .25rem solid #00559F;
+    border-radius: 20px;
+    text-align: center;
+    margin: .75em;
+    margin-top: 0;
+    align-self: normal;
+    width: 30%;
+}
+
+.unc-resource-card:hover, .unc-resource-card:focus, .unc-resource-card:active, .add-resource-card:hover, .add-resource-card:focus, .add-resource-card:active {
+    border: 5px solid #AFBD20;
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+.resource-card-img-1 {
+    max-width: 100%;
+    background-color: #68BBE3;
+    margin-bottom: 2em;
+}
+
+.resource-card-img-2 {
+    max-width: 60%;
+    margin-bottom: 2em;
+}
+
+.resource-card-img-3 {
+    max-width: 80%;
+    margin-bottom: 2em;
+}
+
+.source-link {
+    font-family: 'Oswald', sans-serif;
+    color: #00559F;
+}
+
+.source-link:hover, .source-link:focus, .source-link:active {
+    color:#AFBD20;
+}
+
+.add-resources {
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+
+.add-resources-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2em;
+}
+
+.add-resource-card {
+    padding: 2em;
+    border: .25rem solid #00559F;
+    border-radius: 20px;
+    text-align: center;
+    margin: .75em;
+    margin-top: 0;
+    align-self: normal;
+    width: 45%;
+}
+
+
+p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25rem;
+    color: #00559F;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: #00559F;
+}
+
+h5 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    color: #00559F;
+}
+
+ul {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25rem;
+    color: #00559F;
+    list-style-position: inside;
+}
+
+
+/* community page styling */
+.community-actions-options{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+.community-header{
+    font-size: 4.3vw;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    padding: 2%;
+}
+.community-text{
+    color:#00559F;
+    margin: 5px;
+    margin-bottom: 20px;
+    font-size: 1.7vw;
+}
+
+.bold-font{
+    font-weight: bold;
+}
+
+.community-text-heading{
+    text-decoration: underline;
+    color:#00559F;
+}
+
+.donateFundraiseSection{
+    display:flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.button-community{
+    color: white;
+    background-color: #00559F;
+    border-radius: 8px;
+    width: 140px;
+    height: 40px;
+    font-size: 20px;
+    transition: all 350ms ease;
+}
+
+.button-community:hover, .button-community:focus{
+    background-color: #AFBD20;
+    color:#000000;
+}
+
+.howCanYouHelpSection {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.img-properties{
+   display: block;
+   margin-left: auto;
+   margin-right:auto;
+   width: 60%;
+   height: 45%;
+   padding: 2%;
+}
+
+.contactATeamMemberSection{
+    display: flex;
+    flex-direction: column;
+    padding: 2%; 
+}
+
+.c-buttons-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.c-buttons-contact-social{
+    display: flex;
+    align-items: baseline;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.individual-social-icons{
+    max-width: 172px;
+    max-height: 71px;
+    color: black;
+    transition: all 350ms ease;
+}
+
+@media only screen and (max-width: 992px) {
+    .logo {
+        display: none;
+        visibility: hidden;
+    }
+
+    .page-header {
+        font-size: 6vw;
+    }
+
+    .student-image-1 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .student-image-2 {
+        width: 130px;
+        height: 150px;
+    }
+    
+    .student-image-3 {
+        width: 140px;
+        height: 140px;
+    }
+
+    .image-quote {
+        font-size: 3.3vw;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-bottom: 40px;
+        margin-top: 10px;
+        max-width: 95%;
+    }
+
+    .student-options {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .flex-option1 {
+        padding: 0;
+        margin: 0 auto;
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .flex-option2 {
+        padding: 0;
+        margin: 0 auto;
+        padding-top: 20px;
+        max-width: 85%;
+        margin-bottom: 20px;
+    }
+
+    .flex-option3 {
+        padding: 0;
+        margin: 0 auto;
+        padding-top: 20px;
+        max-width: 85%;
+    }
+
+
+    .option-text {
+        font-size: 3.2vw;
+    }
+
+    .can-do-buttons {
+        display: flex;
+    }
+
+    .youtube-video {
+        max-width: 90%;
+    }
+
+    .facebook-icon {
+        width: 75px;
+        height: 75px;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 10px;
+    }
+    
+    .twitter-icon {
+        width: 75px;
+        height: 75px;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 10px;
+    }
+    
+    .instagram-icon {
+        width: 75px;
+        height: 75px;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 10px;
+    }
+    
+    .spotify-icon {
+        width: 75px;
+        height: 75px;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 10px;
+    }
+    
+    .slack-icon {
+        width: 75px;
+        height: 75px;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 10px;
+    }
+    
+    .youtube-icon {
+        width: 75px;
+        height: 75px;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 10px;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    .gallery-content {
+        position: relative;
+        width: 80%;
+        margin: 1rem;
+    }
+
+    .gallery-text {
+        color: white;
+        font-size: 1.8rem;
+        position: absolute;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .gallery-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+        /* community page styling */
+.community-actions-options{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+.community-header{
+    font-size: 6vw;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    padding: 2%;
+}
+.bold-font{
+    font-weight: bold;
+    font-size: 4.6vw;
+}
+.community-text{
+    font-size: 3.2vw;
+}
+.community-text-heading{
+    font-size: 4.4vw;
+}
+.donateFundraiseSection{
+    display:flex;
+    flex-direction: column;
+    padding: 2%;
+}
+.howCanYouHelpSection {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+.img-properties{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 50%;
+    height: 50%;
+    padding: 2%;
+ }
+.contactATeamMemberSection{
+    display: flex;
+    flex-direction: column;
+    padding: 2%; 
+}
+.c-buttons-contact-social{
+    display: flex;
+    align-items: baseline;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+}
+
+
+/*resources media queries*/
+@media only screen and (min-width: 992px) {
+    .unc-resources-row {
+        max-width: 99%;
+    }
+
+    .add-resources-row {
+        width: 99%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .unc-resources {
+        margin: 1em;
+    }
+    
+    .unc-resources-row {
+        display: block;
+        padding: 2em;
+        width: 90%;
+    }
+
+    .unc-resource-card {
+        width: 100%;
+        margin: 1em;
+    }
+
+    .add-resources {
+        margin: 1em;
+    }
+
+    .add-resources-row {
+        display: block;
+        padding: 2em;
+        width: 90%;
+    }
+
+    .add-resource-card {
+        width: 100%;
+        margin: 1em;
+    }
+}
